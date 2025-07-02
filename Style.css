@@ -161,11 +161,11 @@ body{
 .bgmainT{
   padding-left: 200px;
   color: #3E2B24;
+  height: 700px;
 }
  .mt1{
-  font-family: serif;
-  font-size: 70px;
-  margin-top: 0px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 0px;
  }
 
@@ -184,7 +184,7 @@ body{
   font-weight: 500;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 130px;
+  margin-bottom: 0px;
  }
 
  .mt4{
@@ -761,8 +761,17 @@ body{
   padding-right: 20px;
   width: 460px;
   height: 500px;
+  overflow: hidden;
 }
 
+.s9Pic1 img{
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.s9Pic1:hover img{
+  transform: scale(1.1) !important;
+}
 .dTexti1{
   padding-left: 100px;
 }
@@ -835,22 +844,30 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 35px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 700;
-  font-size: 40px;
   color: #3E2B24;
+  color: #3E2B24;
+  position: relative;
+}
+
+.maintxt::after{
+  position: absolute;
+  content: "Our Expertise";
+  top:10px;
+  left: 25px;
+  height: 100%;
+  width: 100%;
+  color: #C4B693;
+  text-align: center;
+  font-size: 40px;
+  /* filter: blur(10px); */
+
 }
 .maintxt p{
   margin-top: 0px;
   margin-bottom: 0px;
-  /* position: relative; */
-}
-.maintxt .pp{
-  margin-top: 0px;
-  margin-bottom: 0px;
-  /* position: absolute; */
-  color: #C4B693;
-  /* z-index: 1; */
 }
 
 .midMainR{
@@ -1145,16 +1162,25 @@ label{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  transition: background-color 0.5s, transform 0.5s;
-} 
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}  
 
 .img1,.img2,.img3{
   border-radius: 75px;
 }
 
-.divA1:hover{
+/* @keyframes up {
+  0%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+  
+} */
+.divA1:hover {
   background-color: #3E2B24;
-  transform: translateY(-10);
+  transform: translateY(-10px) !important;
 }
  
 
