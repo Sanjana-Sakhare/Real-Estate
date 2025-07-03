@@ -42,16 +42,18 @@ body{
   height: 60px;
   background-color:  #F5F0ED;
   display: flex;
-  /* position: fixed;
-  z-index: 1; */
+  justify-content: space-around;
+  position: fixed;
+  z-index: 1;
 }
 
 .hleft{
-  width: 40%;
+  width: 60%;
   padding:  0px 40px 0px 40px;
   display: flex;
-  justify-content: space-around;
+  /* justify-content:space-evenly; */
   align-items: center;
+  padding-left: 90px;
 }
 
 .hleft a{
@@ -59,32 +61,19 @@ body{
   text-decoration: none;
   font-size: 20px;
   font-weight: 300;
-   font-family:  Helvetica, sans-serif;
+  font-family:  Helvetica, sans-serif;
   font-size: 16px;
   font-weight: normal;
+  padding-left: 30px;
 }
 
-.hmid{
-  width: 15%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /*background-color: rgb(220, 211, 211);*/
-}
 
-.hmid .hmt{
-  color:  #5d4a3c;
-  text-decoration: none;
-  font-family:  Cambria, Cochin, Georgia;
-  /* font-style: oblique; */
-  font-size: 20px;
-  font-weight: 600;
-}
 
 .hright{
   width: 40%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  margin-right: 0px;
 }
 
 .hin{
@@ -167,11 +156,12 @@ body{
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 0px;
+  margin-top: 300px;
  }
 
 .mt2{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 100px;
+  font-size: 60px;
   font-weight: 300;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -183,15 +173,14 @@ body{
   font-size: 50px;
   font-weight: 500;
   margin-top: 0px;
-  margin-bottom: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 90px;
  }
 
  .mt4{
   font-family: serif;
   font-size: 20px;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
  }
 
  .tvideo button {
@@ -245,15 +234,34 @@ body{
   padding-top: 100px;
 }
 
+
 .pic1{
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .pic2{
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+
+.pic1 img{
+   transition: transform 0.5s;
+}
+
+.pic2 img{
+   transition: transform 0.5s;
+}
+
+.pic1:hover img{
+  transform: scale(1.1) !important; 
+}
+
+.pic2:hover img{
+  transform: scale(1.1) !important; 
 }
 
 .section3{
@@ -492,6 +500,30 @@ body{
   background-color: #3E2B24;
 }
 
+.pics31{
+  overflow: hidden;
+}
+
+.pics31 img{
+  transition: transform 0.5s;
+}
+
+.pics31:hover img{
+  transform: scale(1.1) !important;
+}
+
+.pics32{
+  overflow: hidden;
+}
+
+.pics32 img{
+  transition: transform 0.5s;
+}
+
+.pics32:hover img{
+  transform: scale(1.1) !important;
+}
+
 .picMain4{
   display: flex;
   justify-content: space-around;
@@ -592,6 +624,33 @@ body{
 .section6{
   background-color: #F1ECEA;
 }
+
+   
+
+.sec6Pic1{
+  overflow: hidden;
+}
+
+.sec6Pic1 img{
+   transition: transform 0.5s;
+}
+
+.sec6Pic1:hover img{
+  transform: scale(1.1) !important;
+}
+
+.sec6Pic2{
+  overflow: hidden;
+}
+
+.sec6Pic2 img{
+   transition: transform 0.5s;
+}
+
+.sec6Pic2:hover img{
+  transform: scale(1.1) !important;
+}
+
 
 .row1s6{
   display: flex;
@@ -703,7 +762,17 @@ body{
 .s8Pic1{
   padding-left: 45px;
   padding-right: 20px;
+  overflow: hidden;
 }
+.s8Pic1 img{
+  transition: transform 0.5s;
+}
+
+.s8Pic1:hover img{
+  transform: scale(1.1) !important;
+}
+
+
 
 .dTexth1{
   padding-right: 100px;
@@ -765,7 +834,7 @@ body{
 }
 
 .s9Pic1 img{
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: transform 0.5s;
 }
 
@@ -850,9 +919,10 @@ body{
   color: #3E2B24;
   color: #3E2B24;
   position: relative;
+  margin-bottom: 0px;
 }
 
-.maintxt::after{
+/* .maintxt::after{
   position: absolute;
   content: "Our Expertise";
   top:10px;
@@ -862,9 +932,9 @@ body{
   color: #C4B693;
   text-align: center;
   font-size: 40px;
-  /* filter: blur(10px); */
+  /* filter: blur(10px); 
+} */
 
-}
 .maintxt p{
   margin-top: 0px;
   margin-bottom: 0px;
@@ -899,8 +969,7 @@ body{
   width: 100%;
   height: 0;
    background: linear-gradient(#C4B69307,#3E2B24);
-   /* background-color: linear-g; */
-  border-radius: 20px;
+  /* border-radius: 20px; */
   position: absolute;
   left: 0;
   bottom: 0;
@@ -916,11 +985,10 @@ body{
 
 
 
-
 .imgboxr1{  
   display: flex;
   justify-content: space-around;
-  padding-top: 20px;
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 
@@ -932,19 +1000,19 @@ body{
 }
 
 .dimg1{
-  width: 280px;
-  height: 280px;
+  width: 450px;
+  height: 450px;
   /* background-color: aqua; */
   border: 1px solid #645941;
   position: relative;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   overflow: hidden;
 }
 
 .dimg1 img{
   width:100%;
   height: 100%;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   transition: transform 0.5s;
 }
 /*animation */
